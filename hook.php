@@ -15,7 +15,7 @@ file_put_contents($file, $current);
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/vendor/autoload.php';
 
-$telegram = new Longman\TelegramBot\Telegram(BOT_TOKEN, BOT_USERNAME);
+$telegram = new Longman\TelegramBot\Telegram('931840409:AAFURs_LuoVkTDXeLy0AmLLecG2IhYjpjUM', 'G4T3MS_bot');
 use Longman\TelegramBot\Request;
 
 $data = json_decode($json_data);
@@ -32,7 +32,7 @@ $message .= "URL tested: $request_url \n";
 $message .= "test time: $request_start_time \n";
 
 $data = [
-    'chat_id' => CHAT_ID,
+    'chat_id' => 173840098,
     'text'    => $message,
 ];
 
